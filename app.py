@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 import json
 from datetime import datetime
+from config import FROLING_USERNAME, FROLING_PASSWORD
 
 # Path to your chromedriver
 CHROME_DRIVER_PATH = "/Froling"  # Update the path if needed
@@ -34,8 +35,8 @@ try:
     # Login process
     username_field = driver.find_element(By.CSS_SELECTOR, "input[autocomplete='username']")
     password_field = driver.find_element(By.CSS_SELECTOR, "input[autocomplete='current-password']")
-    username_field.send_keys("zsolt.farnas@gmail.com")
-    password_field.send_keys("Zsoolti20!")
+    username_field.send_keys(FROLING_USERNAME)
+    password_field.send_keys(FROLING_PASSWORD)
     login_button = driver.find_element(By.CLASS_NAME, "mdc-button")
     login_button.click()
 

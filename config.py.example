@@ -1,0 +1,6 @@
+# Froling login credentials
+# Replace these placeholder values with your actual credentials
+# and rename this file to 'config.py'
+
+FROLING_USERNAME = "your.email@example.com"
+FROLING_PASSWORD = "your_password_here" 
