@@ -1,9 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 import time
 
 # Path to your chromedriver
-CHROME_DRIVER_PATH = "/Froling_Connect"  # Update the path if needed
+CHROME_DRIVER_PATH = "/Froling"  # Update the path if needed
 
 # URLs
 URL = "https://connect-web.froeling.com/login"  # Login URL
@@ -15,8 +16,11 @@ PAGES = {
     "Feed System": "https://connect-web.froeling.com/facility/67918/components/1_906",
 }
 
-# Create a new instance of Chrome WebDriver and specify the path to chromedriver
-driver = webdriver.Chrome()
+# Create a new instance of Chrome WebDriver with headless mode
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-gpu')  # Required for some systems
+driver = webdriver.Chrome(options=chrome_options)
 
 # Open the login page
 driver.get(URL)
