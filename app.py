@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 import time
+import json
+from datetime import datetime
 
 # Path to your chromedriver
 CHROME_DRIVER_PATH = "/Froling"  # Update the path if needed
@@ -42,40 +44,6 @@ try:
 
     print("Login successful!")
 
-    # Consolidated HTML content
-    html_content = """
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Scraped Data</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 20px;
-            }
-            table {
-                border-collapse: collapse;
-                width: 100%;
-                margin-bottom: 30px;
-            }
-            th, td {
-                border: 1px solid #ddd;
-                padding: 8px;
-                text-align: left;
-            }
-            th {
-                background-color: #f4f4f4;
-                font-weight: bold;
-            }
-            h1, h2 {
-                color: #333;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Scraped Data from All Pages</h1>
-    """
-
     # Function to scrape a single page
     def scrape_page(url, page_name):
         driver.get(url)
@@ -84,48 +52,34 @@ try:
         # Scrape data
         keys = driver.find_elements(By.CLASS_NAME, "key")
         values = driver.find_elements(By.CLASS_NAME, "value")
-        scraped_data = [(key.text, value.text) for key, value in zip(keys, values)]
+        return {key.text: value.text for key, value in zip(keys, values)}
 
-        # Add a section for this page to the HTML content
-        global html_content
-        html_content += f"<h2>{page_name}</h2>\n"
-        html_content += """
-        <table>
-            <thead>
-                <tr>
-                    <th>Key</th>
-                    <th>Value</th>
-                </tr>
-            </thead>
-            <tbody>
-        """
-        for key, value in scraped_data:
-            html_content += f"                <tr>\n"
-            html_content += f"                    <td>{key}</td>\n"
-            html_content += f"                    <td>{value}</td>\n"
-            html_content += f"                </tr>\n"
-        html_content += """
-            </tbody>
-        </table>
-        """
+    # Initialize data dictionary
+    scraped_data = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "pages": {}
+    }
 
     # Iterate over all pages and scrape data
     for page_name, url in PAGES.items():
         print(f"Scraping data from {page_name}...")
-        scrape_page(url, page_name)
+        scraped_data["pages"][page_name] = scrape_page(url, page_name)
 
-    # Finalize the HTML content
-    html_content += """
-    </body>
-    </html>
-    """
+    try:
+        # Load existing data from JSON file
+        with open('data.json', 'r') as file:
+            existing_data = json.load(file)
+    except FileNotFoundError:
+        existing_data = []
 
-    # Save the consolidated HTML to a file
-    output_file = "scraped_data_all_pages.html"
-    with open(output_file, "w") as file:
-        file.write(html_content)
+    # Append new data to existing data
+    existing_data.append(scraped_data)
 
-    print(f"All data saved to {output_file}")
+    # Save updated data back to JSON file
+    with open('data.json', 'w', encoding='utf-8') as file:
+        json.dump(existing_data, file, indent=4, ensure_ascii=False)
+
+    print(f"All data saved to data.json")
 
 except Exception as e:
     print(f"An error occurred: {e}")
