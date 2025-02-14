@@ -33,7 +33,7 @@ This project is a web scraper that logs into the Fröling Connect web portal, na
 ## Usage
 Run the script with:
 ```bash
-python scraper.py
+python app.py
 ```
 
 The script will:
