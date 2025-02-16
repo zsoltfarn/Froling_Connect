@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 from config import FROLING_USERNAME, FROLING_PASSWORD
 
-# Path to your chromedriver
+# Path to your chromedriver.
 CHROME_DRIVER_PATH = "/usr/local/chromedriver/"  # Update the path if needed
 
 # URLs
