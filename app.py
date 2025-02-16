@@ -50,10 +50,47 @@ try:
         driver.get(url)
         time.sleep(5)  # Wait for the page to load
 
-        # Scrape data
-        keys = driver.find_elements(By.CLASS_NAME, "key")
-        values = driver.find_elements(By.CLASS_NAME, "value")
-        return {key.text: value.text for key, value in zip(keys, values)}
+        data = {}
+        # Special metrics we want to track for Boiler
+        boiler_metrics = {
+            "Boiler Status": None,
+            "Operation hours": None,
+            "Hours since last maintenance": None
+        }
+
+        # Get all key-value pairs
+        key_elements = driver.find_elements(By.CLASS_NAME, "key")
+        value_elements = driver.find_elements(By.CLASS_NAME, "value")
+
+        for key_elem, value_elem in zip(key_elements, value_elements):
+            key = key_elem.text.strip()
+            value = value_elem.text.strip()
+            if key and value:  # Only add if both key and value are non-empty
+                # Handle translation for Kesselzustand to Boiler Status
+                if key == "Kesselzustand":
+                    key = "Boiler Status"
+                data[key] = value
+                # Check if this is one of our special boiler metrics
+                if page_name == "Boiler" and key in boiler_metrics:
+                    boiler_metrics[key] = value
+
+        # Get data from infoboxes
+        infoboxes = driver.find_elements(By.CLASS_NAME, "froeling-infobox")
+        for box in infoboxes:
+            box_text = box.text
+            for line in box_text.split('\n'):
+                if ':' in line:
+                    key, value = line.split(':', 1)
+                    key = key.strip()
+                    # Handle translation for Kesselzustand to Boiler Status
+                    if key == "Kesselzustand":
+                        key = "Boiler Status"
+                    data[key] = value.strip()
+                    # Check if this is one of our special boiler metrics
+                    if page_name == "Boiler" and key in boiler_metrics:
+                        boiler_metrics[key] = value.strip()  
+
+        return data
 
     # Initialize data dictionary
     scraped_data = {
