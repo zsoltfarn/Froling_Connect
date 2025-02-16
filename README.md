@@ -31,7 +31,7 @@ This project is a web scraper that logs into the Fröling Connect web portal, na
 4. Create a `config.py` file and enter your login credentials.
 
 ## Usage
-Run the script with.:
+Run the script with:
 ```bash
 python app.py
 ```
