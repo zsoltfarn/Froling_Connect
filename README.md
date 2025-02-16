@@ -13,9 +13,9 @@ This project is a web scraper that logs into the Fröling Connect web portal, na
 ## Prerequisites
 - Python 3.x installed on your system.
 - Google Chrome browser installed.
-- ChromeDriver installed and accessible at `/usr/local/chromedriver/` (update path if necessary).
+- ChromeDriver installed and accessible at `/usr/local/chromedriver/` (update path if necessary and istall the version that works with your Google Chrome browser).
 - Selenium package installed (`pip install selenium`).
-- A `config.py` file containing:
+- A `config.py` (change the filename from 'confg.py.example' to 'config.py' and change the "your_username" and "your_password" with your own credentials) file containing:
   ```python
   FROLING_USERNAME = "your_username"
   FROLING_PASSWORD = "your_password"
