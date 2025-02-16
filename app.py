@@ -103,21 +103,11 @@ try:
         print(f"Scraping data from {page_name}...")
         scraped_data["pages"][page_name] = scrape_page(url, page_name)
 
-    try:
-        # Load existing data from JSON file
-        with open('data.json', 'r') as file:
-            existing_data = json.load(file)
-    except FileNotFoundError:
-        existing_data = []
-
-    # Append new data to existing data
-    existing_data.append(scraped_data)
-
-    # Save updated data back to JSON file
+    # Save only the latest data to JSON file
     with open('data.json', 'w', encoding='utf-8') as file:
-        json.dump(existing_data, file, indent=4, ensure_ascii=False)
+        json.dump([scraped_data], file, indent=4, ensure_ascii=False)
 
-    print(f"All data saved to data.json")
+    print(f"Latest data saved to data.json")
 
 except Exception as e:
     print(f"An error occurred: {e}")
