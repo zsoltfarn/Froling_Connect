@@ -57,7 +57,7 @@ The extracted data is stored in `data.json` in the following structure:
 ```
 
 ## Troubleshooting
-- **Chromedriver not found:** Ensure you have installed ChromeDriver and set the correct path.
+- **Chromedriver not found:** Ensure you have installed ChromeDriver and set the correct path. Also ensure that it's compatible with your version of Google Chrome.
 - **Login issues:** Double-check your credentials in `config.py`.
 - **Data not scraped:** Check if the class names `key` and `value` match the website’s HTML structure.
 
