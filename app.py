@@ -3,6 +3,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.core.utils import ChromeType
+import os
+import shutil
 import time
 import json
 from datetime import datetime
@@ -29,8 +32,31 @@ chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument('--window-size=1920,1080')
 
+# If using snap-installed Chromium or a custom Chrome path, allow override via env var
+chrome_binary_env = os.getenv('CHROME_BINARY')
+if chrome_binary_env:
+    chrome_options.binary_location = chrome_binary_env
+else:
+    # Try to auto-detect a common Chrome/Chromium binary
+    for exe in ['google-chrome', 'google-chrome-stable', 'chromium', 'chromium-browser']:
+        detected = shutil.which(exe)
+        if detected:
+            chrome_options.binary_location = detected
+            break
+
+# Decide Chrome type based on available binary
+if shutil.which('google-chrome') or shutil.which('google-chrome-stable'):
+    chrome_type = ChromeType.GOOGLE
+elif shutil.which('chromium') or shutil.which('chromium-browser'):
+    chrome_type = ChromeType.CHROMIUM
+else:
+    chrome_type = ChromeType.GOOGLE  # default fallback
+
 # Use webdriver-manager to automatically install/find the correct ChromeDriver
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+driver = webdriver.Chrome(
+    service=Service(ChromeDriverManager(chrome_type=chrome_type).install()),
+    options=chrome_options,
+)
 
 # Open the login page
 driver.get(URL)
