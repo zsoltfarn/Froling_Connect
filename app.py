@@ -1,14 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-import os
-import shutil
 import time
 import json
 from datetime import datetime
 from config import FROLING_USERNAME, FROLING_PASSWORD
 
-# Chromedriver path is managed automatically by webdriver-manager.
+# Path to your chromedriver.
+CHROME_DRIVER_PATH = "/usr/local/chromedriver/"  # Update the path if needed
 
 # URLs
 URL = "https://connect-web.froeling.com/login"  # Login URL
@@ -24,28 +23,6 @@ PAGES = {
 chrome_options = Options()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--disable-gpu')  # Required for some systems
-# Extra flags helpful on servers/containers
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
-chrome_options.add_argument('--window-size=1920,1080')
-chrome_options.add_argument('--remote-debugging-port=9222')
-chrome_options.add_argument('--user-data-dir=/tmp/froeling-chrome')
-
-# If using snap-installed Chromium or a custom Chrome path, allow override via env var
-chrome_binary_env = os.getenv('CHROME_BINARY')
-if chrome_binary_env:
-    chrome_options.binary_location = chrome_binary_env
-else:
-    # Try to auto-detect a common Chrome/Chromium binary
-    for exe in ['google-chrome', 'google-chrome-stable', 'chromium', 'chromium-browser']:
-        detected = shutil.which(exe)
-        if detected:
-            chrome_options.binary_location = detected
-            break
-
-# Decide Chrome type based on available binary
-# Use Selenium Manager (Selenium 4.6+) to automatically manage the driver.
-# This works for both Google Chrome and Chromium when the binary is detected or provided via CHROME_BINARY.
 driver = webdriver.Chrome(options=chrome_options)
 
 # Open the login page
@@ -111,7 +88,7 @@ try:
                     data[key] = value.strip()
                     # Check if this is one of our special boiler metrics
                     if page_name == "Boiler" and key in boiler_metrics:
-                        boiler_metrics[key] = value.strip()  
+                        boiler_metrics[key] = value.strip()
 
         return data
 

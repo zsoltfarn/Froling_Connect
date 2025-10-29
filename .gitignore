@@ -1,0 +1,54 @@
+## Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+## Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+## Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+## Test / coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+## IDE / editor
+.idea/
+.vscode/
+*.iml
+
+## OS / misc
+.DS_Store
+Thumbs.db
+
+## Logs and runtime artifacts
+*.log
+logs/
+run_artifacts/
+
+## Secrets / environment files
+.env
+.env.*
+*.key
+*.pem
+*.crt
+
+## Selenium / Chrome
+.chrome-profile/
+screenshots/
+reports/
+error-*.png
+error-*.html
