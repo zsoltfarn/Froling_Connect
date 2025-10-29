@@ -1,9 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.core.utils import ChromeType
 import os
 import shutil
 import time
@@ -31,6 +28,8 @@ chrome_options.add_argument('--disable-gpu')  # Required for some systems
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument('--window-size=1920,1080')
+chrome_options.add_argument('--remote-debugging-port=9222')
+chrome_options.add_argument('--user-data-dir=/tmp/froeling-chrome')
 
 # If using snap-installed Chromium or a custom Chrome path, allow override via env var
 chrome_binary_env = os.getenv('CHROME_BINARY')
@@ -45,18 +44,9 @@ else:
             break
 
 # Decide Chrome type based on available binary
-if shutil.which('google-chrome') or shutil.which('google-chrome-stable'):
-    chrome_type = ChromeType.GOOGLE
-elif shutil.which('chromium') or shutil.which('chromium-browser'):
-    chrome_type = ChromeType.CHROMIUM
-else:
-    chrome_type = ChromeType.GOOGLE  # default fallback
-
-# Use webdriver-manager to automatically install/find the correct ChromeDriver
-driver = webdriver.Chrome(
-    service=Service(ChromeDriverManager(chrome_type=chrome_type).install()),
-    options=chrome_options,
-)
+# Use Selenium Manager (Selenium 4.6+) to automatically manage the driver.
+# This works for both Google Chrome and Chromium when the binary is detected or provided via CHROME_BINARY.
+driver = webdriver.Chrome(options=chrome_options)
 
 # Open the login page
 driver.get(URL)
