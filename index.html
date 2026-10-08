@@ -113,19 +113,21 @@
                     document.getElementById("timestamp").textContent = "Last Updated: " + lastEntry.timestamp;
                     const dataContainer = document.getElementById("data");
 
-                    // Display Boiler Status in the header
-                    const boilerStatus = lastEntry.pages.Boiler["Boiler Status"];
+                    // Display Boiler Status in the header if available
+                    const boilerStatus = lastEntry.pages?.Boiler?.["Boiler Status"];
                     const kesselzustandElement = document.getElementById("kesselzustand");
-                    if (boilerStatus === "Standby") {
-                        kesselzustandElement.innerHTML = `<span style="color: #555;">- <i class="fas fa-power-off" style="color: orange"></i> ${boilerStatus}</span>`;
-                    } else if (boilerStatus === "Heating") {
-                        kesselzustandElement.innerHTML = `<span style="color: #555;">- <i class="fas fa-fire" style="color: red"></i> ${boilerStatus}</span>`;
-                    } else {
-                        kesselzustandElement.innerHTML = `<span style="color: #555;">- ${boilerStatus}</span>`;
+                    if (boilerStatus) {
+                        if (boilerStatus === "Standby") {
+                            kesselzustandElement.innerHTML = `<span style="color: #555;">- <i class="fas fa-power-off" style="color: orange"></i> ${boilerStatus}</span>`;
+                        } else if (boilerStatus === "Heating") {
+                            kesselzustandElement.innerHTML = `<span style="color: #555;">- <i class="fas fa-fire" style="color: red"></i> ${boilerStatus}</span>`;
+                        } else {
+                            kesselzustandElement.innerHTML = `<span style="color: #555;">- ${boilerStatus}</span>`;
+                        }
                     }
-                    for (const [category, readings] of Object.entries(lastEntry.pages)) {
+                    for (const [category, readings] of Object.entries(lastEntry.pages || {})) {
                         const section = document.createElement("div");
-                        section.classList.add("section", "collapsed");
+                        section.classList.add("section");
                         const title = document.createElement("h2");
                         title.innerHTML = getIconForCategory(category) + ' ' + category;
                         title.addEventListener('click', () => {
@@ -151,7 +153,15 @@
                         dataContainer.appendChild(section);
                     }
                 })
-                .catch(error => console.error('Error loading data:', error));
+                .catch(error => {
+                    console.error('Error loading data:', error);
+                    document.getElementById("data").innerHTML = `
+                        <div style="color: #d32f2f; padding: 20px; background: #ffebee; border-radius: 6px; text-align: left;">
+                            <strong>Could not load data.json</strong><br>
+                            If you opened this directly from a folder (file://), browsers block loading JSON files for security.<br><br>
+                            Please serve it with Python: <code>python -m http.server 8000</code> then visit <a href="http://localhost:8000">http://localhost:8000</a>.
+                        </div>`;
+                });
         });
 
         function getIconForCategory(category) {
