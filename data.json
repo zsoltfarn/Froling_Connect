@@ -271,5 +271,350 @@
                 "Pellet consumption counter": "9.755 t"
             }
         }
+    },
+    {
+        "timestamp": "2025-11-26 15:30:16",
+        "pages": {
+            "Boiler": {
+                "Boiler temperature": "67 °C",
+                "Flue gas temperature": "125 °C",
+                "Remaining hours in heating mode till ashbox full warning appear": "792 h",
+                "ID fan control": "69 %",
+                "Residual oxygen content": "8.9 %"
+            },
+            "Hot Water Tank": {
+                "DHW tank top temperature": "59 °C",
+                "DHW tank bottom temperature": "15 °C",
+                "DHW tank pump control": "0 %"
+            },
+            "Heating Tank": {
+                "Buffer tank top temperature": "59 °C",
+                "Buffer tank bottom temperature": "40 °C",
+                "Buffer tank charge": "52 %",
+                "Buffer tank pump control": "60 %"
+            },
+            "Solar": {
+                "Collector temperature": "10 °C",
+                "Collector flow temperature": "10 °C",
+                "Collector pump control": "0 %",
+                "Collector pump runtime": "4082 h",
+                "DHW tank bottom temperature": "15 °C"
+            },
+            "Feed System": {
+                "Pellet container level": "89.3 %",
+                "resetable t-counter:": "9 t",
+                "Resetable kg-counter:": "659 kg",
+                "Remaining pellet amount in store room": "4.7 t",
+                "Minimum pellet level fuel storeroom": "0.5 t",
+                "Total pellet consumption": "15.2 t",
+                "Pellet consumption counter": "9.659 t"
+            }
+        }
+    },
+    {
+        "timestamp": "2025-11-28 14:14:05",
+        "pages": {
+            "Boiler": {
+                "Boiler temperature": "55 °C",
+                "Flue gas temperature": "49 °C",
+                "Remaining hours in heating mode till ashbox full warning appear": "781 h",
+                "ID fan control": "0 %",
+                "Residual oxygen content": "1.9 %"
+            },
+            "Hot Water Tank": {
+                "DHW tank top temperature": "66 °C",
+                "DHW tank bottom temperature": "20 °C",
+                "DHW tank pump control": "0 %"
+            },
+            "Heating Tank": {
+                "Buffer tank top temperature": "66 °C",
+                "Buffer tank bottom temperature": "33 °C",
+                "Buffer tank charge": "52 %",
+                "Buffer tank pump control": "0 %"
+            },
+            "Solar": {
+                "Collector temperature": "17 °C",
+                "Collector flow temperature": "17 °C",
+                "Collector pump control": "0 %",
+                "Collector pump runtime": "4084 h",
+                "DHW tank bottom temperature": "20 °C"
+            },
+            "Feed System": {
+                "Pellet container level": "100.0 %",
+                "resetable t-counter:": "9 t",
+                "Resetable kg-counter:": "703 kg",
+                "Remaining pellet amount in store room": "4.7 t",
+                "Minimum pellet level fuel storeroom": "0.5 t",
+                "Total pellet consumption": "15.2 t",
+                "Pellet consumption counter": "9.703 t"
+            }
+        }
+    },
+    {
+        "timestamp": "2026-08-25 16:34:48",
+        "pages": {
+            "Boiler": {
+                "Boiler temperature": "29 °C",
+                "Flue gas temperature": "31 °C",
+                "Remaining hours in heating mode till ashbox full warning appear": "738 h",
+                "ID fan control": "0 %",
+                "Residual oxygen content": "1.9 %"
+            },
+            "Hot Water Tank": {
+                "DHW tank top temperature": "59 °C",
+                "DHW tank bottom temperature": "45 °C",
+                "DHW tank pump control": "0 %"
+            },
+            "Heating Tank": {
+                "Buffer tank top temperature": "49 °C",
+                "Buffer tank bottom temperature": "31 °C",
+                "Buffer tank charge": "26 %",
+                "Buffer tank pump control": "0 %"
+            },
+            "Solar": {
+                "Collector temperature": "52 °C",
+                "Collector flow temperature": "52 °C",
+                "Collector pump control": "0 %",
+                "Collector pump runtime": "5294 h",
+                "DHW tank bottom temperature": "45 °C"
+            },
+            "Feed System": {
+                "Pellet container level": "100.0 %",
+                "resetable t-counter:": "12 t",
+                "Resetable kg-counter:": "689 kg",
+                "Remaining pellet amount in store room": "1.7 t",
+                "Minimum pellet level fuel storeroom": "0.5 t",
+                "Total pellet consumption": "18.2 t",
+                "Pellet consumption counter": "12.689 t"
+            }
+        }
+    },
+    {
+        "timestamp": "2026-09-04 12:34:46",
+        "pages": {
+            "Boiler": {
+                "Boiler temperature": "28 °C",
+                "Flue gas temperature": "30 °C",
+                "Remaining hours in heating mode till ashbox full warning appear": "736 h",
+                "ID fan control": "0 %",
+                "Residual oxygen content": "1.9 %"
+            },
+            "Hot Water Tank": {
+                "DHW tank top temperature": "50 °C",
+                "DHW tank bottom temperature": "43 °C",
+                "DHW tank pump control": "0 %"
+            },
+            "Heating Tank": {
+                "Buffer tank top temperature": "44 °C",
+                "Buffer tank bottom temperature": "25 °C",
+                "Buffer tank charge": "11 %",
+                "Buffer tank pump control": "0 %"
+            },
+            "Solar": {
+                "Collector temperature": "62 °C",
+                "Collector flow temperature": "62 °C",
+                "Collector pump control": "99 %",
+                "Collector pump runtime": "5356 h",
+                "DHW tank bottom temperature": "43 °C"
+            },
+            "Feed System": {
+                "Pellet container level": "100.0 %",
+                "resetable t-counter:": "12 t",
+                "Resetable kg-counter:": "695 kg",
+                "Remaining pellet amount in store room": "1.7 t",
+                "Minimum pellet level fuel storeroom": "0.5 t",
+                "Total pellet consumption": "18.2 t",
+                "Pellet consumption counter": "12.695 t"
+            }
+        }
+    },
+    {
+        "timestamp": "2026-09-05 11:25:14",
+        "pages": {
+            "Boiler": {
+                "Boiler temperature": "26 °C",
+                "Flue gas temperature": "30 °C",
+                "Remaining hours in heating mode till ashbox full warning appear": "736 h",
+                "ID fan control": "0 %",
+                "Residual oxygen content": "1.9 %"
+            },
+            "Hot Water Tank": {
+                "DHW tank top temperature": "59 °C",
+                "DHW tank bottom temperature": "36 °C",
+                "DHW tank pump control": "0 %"
+            },
+            "Heating Tank": {
+                "Buffer tank top temperature": "53 °C",
+                "Buffer tank bottom temperature": "28 °C",
+                "Buffer tank charge": "27 %",
+                "Buffer tank pump control": "0 %"
+            },
+            "Solar": {
+                "Collector temperature": "51 °C",
+                "Collector flow temperature": "51 °C",
+                "Collector pump control": "93 %",
+                "Collector pump runtime": "5363 h",
+                "DHW tank bottom temperature": "36 °C"
+            },
+            "Feed System": {
+                "Pellet container level": "100.0 %",
+                "resetable t-counter:": "12 t",
+                "Resetable kg-counter:": "695 kg",
+                "Remaining pellet amount in store room": "1.7 t",
+                "Minimum pellet level fuel storeroom": "0.5 t",
+                "Total pellet consumption": "18.2 t",
+                "Pellet consumption counter": "12.695 t"
+            }
+        }
+    },
+    {
+        "timestamp": "2026-09-06 11:25:36",
+        "pages": {
+            "Boiler": {},
+            "Hot Water Tank": {
+                "DHW tank top temperature": "59 °C",
+                "DHW tank bottom temperature": "50 °C",
+                "DHW tank pump control": "0 %"
+            },
+            "Heating Tank": {
+                "Buffer tank top temperature": "50 °C",
+                "Buffer tank bottom temperature": "26 °C",
+                "Buffer tank charge": "22 %",
+                "Buffer tank pump control": "0 %"
+            },
+            "Solar": {
+                "Collector temperature": "66 °C",
+                "Collector flow temperature": "66 °C",
+                "Collector pump control": "100 %",
+                "Collector pump runtime": "5372 h",
+                "DHW tank bottom temperature": "50 °C"
+            },
+            "Feed System": {
+                "Pellet container level": "100.0 %",
+                "resetable t-counter:": "12 t",
+                "Resetable kg-counter:": "695 kg",
+                "Remaining pellet amount in store room": "1.7 t",
+                "Minimum pellet level fuel storeroom": "0.5 t",
+                "Total pellet consumption": "18.2 t",
+                "Pellet consumption counter": "12.695 t"
+            }
+        }
+    },
+    {
+        "timestamp": "2026-09-07 16:47:51",
+        "pages": {
+            "Boiler": {
+                "Boiler temperature": "28 °C",
+                "Flue gas temperature": "32 °C",
+                "Remaining hours in heating mode till ashbox full warning appear": "736 h",
+                "ID fan control": "0 %",
+                "Residual oxygen content": "1.9 %"
+            },
+            "Hot Water Tank": {
+                "DHW tank top temperature": "66 °C",
+                "DHW tank bottom temperature": "63 °C",
+                "DHW tank pump control": "0 %"
+            },
+            "Heating Tank": {
+                "Buffer tank top temperature": "54 °C",
+                "Buffer tank bottom temperature": "31 °C",
+                "Buffer tank charge": "34 %",
+                "Buffer tank pump control": "0 %"
+            },
+            "Solar": {
+                "Collector temperature": "75 °C",
+                "Collector flow temperature": "75 °C",
+                "Collector pump control": "79 %",
+                "Collector pump runtime": "5385 h",
+                "DHW tank bottom temperature": "63 °C"
+            },
+            "Feed System": {
+                "Pellet container level": "100.0 %",
+                "resetable t-counter:": "12 t",
+                "Resetable kg-counter:": "695 kg",
+                "Remaining pellet amount in store room": "1.7 t",
+                "Minimum pellet level fuel storeroom": "0.5 t",
+                "Total pellet consumption": "18.2 t",
+                "Pellet consumption counter": "12.695 t"
+            }
+        }
+    },
+    {
+        "timestamp": "2026-09-08 15:01:21",
+        "pages": {
+            "Boiler": {
+                "Boiler temperature": "28 °C",
+                "Flue gas temperature": "30 °C",
+                "Remaining hours in heating mode till ashbox full warning appear": "736 h",
+                "ID fan control": "0 %",
+                "Residual oxygen content": "1.9 %"
+            },
+            "Hot Water Tank": {
+                "DHW tank top temperature": "66 °C",
+                "DHW tank bottom temperature": "62 °C",
+                "DHW tank pump control": "0 %"
+            },
+            "Heating Tank": {
+                "Buffer tank top temperature": "56 °C",
+                "Buffer tank bottom temperature": "32 °C",
+                "Buffer tank charge": "37 %",
+                "Buffer tank pump control": "0 %"
+            },
+            "Solar": {
+                "Collector temperature": "34 °C",
+                "Collector flow temperature": "34 °C",
+                "Collector pump control": "0 %",
+                "Collector pump runtime": "5386 h",
+                "DHW tank bottom temperature": "62 °C"
+            },
+            "Feed System": {
+                "Pellet container level": "100.0 %",
+                "resetable t-counter:": "12 t",
+                "Resetable kg-counter:": "695 kg",
+                "Remaining pellet amount in store room": "1.7 t",
+                "Minimum pellet level fuel storeroom": "0.5 t",
+                "Total pellet consumption": "18.2 t",
+                "Pellet consumption counter": "12.695 t"
+            }
+        }
+    },
+    {
+        "timestamp": "2026-09-09 15:13:03",
+        "pages": {
+            "Boiler": {
+                "Boiler temperature": "28 °C",
+                "Flue gas temperature": "30 °C",
+                "Remaining hours in heating mode till ashbox full warning appear": "736 h",
+                "ID fan control": "0 %",
+                "Residual oxygen content": "1.9 %"
+            },
+            "Hot Water Tank": {
+                "DHW tank top temperature": "66 °C",
+                "DHW tank bottom temperature": "62 °C",
+                "DHW tank pump control": "0 %"
+            },
+            "Heating Tank": {
+                "Buffer tank top temperature": "56 °C",
+                "Buffer tank bottom temperature": "32 °C",
+                "Buffer tank charge": "37 %",
+                "Buffer tank pump control": "0 %"
+            },
+            "Solar": {
+                "Collector temperature": "34 °C",
+                "Collector flow temperature": "34 °C",
+                "Collector pump control": "0 %",
+                "Collector pump runtime": "5386 h",
+                "DHW tank bottom temperature": "62 °C"
+            },
+            "Feed System": {
+                "Pellet container level": "100.0 %",
+                "resetable t-counter:": "12 t",
+                "Resetable kg-counter:": "695 kg",
+                "Remaining pellet amount in store room": "1.7 t",
+                "Minimum pellet level fuel storeroom": "0.5 t",
+                "Total pellet consumption": "18.2 t",
+                "Pellet consumption counter": "12.695 t"
+            }
+        }
     }
 ]

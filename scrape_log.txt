@@ -1,0 +1,291 @@
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+Traceback (most recent call last):
+  File "C:\Users\zsolt\Github\Froling_Connect\app.py", line 2, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+Traceback (most recent call last):
+  File "C:\Users\zsolt\Github\Froling_Connect\app.py", line 2, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+The system cannot find the path specified.
+Login successful!
+Scraping data from Boiler...
+Scraping data from Hot Water Tank...
+Scraping data from Heating Tank...
+Scraping data from Solar...
+Scraping data from Feed System...
+All data saved to data.json
+Login successful!
+Scraping data from Boiler...
+Scraping data from Hot Water Tank...
+Scraping data from Heating Tank...
+Scraping data from Solar...
+Scraping data from Feed System...
+All data saved to data.json
+? Error: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[autocomplete='username']"}
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff645dee035+5745]
+	chromedriver!(No symbol) [0x7ff645d16a90]
+	chromedriver!(No symbol) [0x7ff645b45d7d]
+	chromedriver!(No symbol) [0x7ff645ba09ea]
+	chromedriver!(No symbol) [0x7ff645ba0cfc]
+	chromedriver!(No symbol) [0x7ff645bf18f7]
+	chromedriver!(No symbol) [0x7ff645bee502]
+	chromedriver!(No symbol) [0x7ff645b92e4b]
+	chromedriver!(No symbol) [0x7ff645b93d83]
+	chromedriver!GetHandleVerifier [0x7ff646202f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff646230132+447842]
+	chromedriver!GetHandleVerifier [0x7ff646223e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff645ee3f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff645d2419c]
+	chromedriver!(No symbol) [0x7ff645d1fdd4]
+	chromedriver!(No symbol) [0x7ff645d1ff64]
+	chromedriver!(No symbol) [0x7ff645d0a91c]
+	KERNEL32!BaseThreadInitThunk [0x7ff8b8a5ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff8b9eecaec+2c]
+
+Login successful!
+Scraping data from Boiler...
+Scraping data from Hot Water Tank...
+Scraping data from Heating Tank...
+Scraping data from Solar...
+Scraping data from Feed System...
+All data saved to data.json
+? Error: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[autocomplete='username']"}
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff720a7e035+5745]
+	chromedriver!(No symbol) [0x7ff7209a6a90]
+	chromedriver!(No symbol) [0x7ff7207d5d7d]
+	chromedriver!(No symbol) [0x7ff7208309ea]
+	chromedriver!(No symbol) [0x7ff720830cfc]
+	chromedriver!(No symbol) [0x7ff7208818f7]
+	chromedriver!(No symbol) [0x7ff72087e502]
+	chromedriver!(No symbol) [0x7ff720822e4b]
+	chromedriver!(No symbol) [0x7ff720823d83]
+	chromedriver!GetHandleVerifier [0x7ff720e92f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff720ec0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff720eb3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff720b73f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff7209b419c]
+	chromedriver!(No symbol) [0x7ff7209afdd4]
+	chromedriver!(No symbol) [0x7ff7209aff64]
+	chromedriver!(No symbol) [0x7ff72099a91c]
+	KERNEL32!BaseThreadInitThunk [0x7ffd178dccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffd18accaec+2c]
+
+? Error: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[autocomplete='username']"}
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff720a7e035+5745]
+	chromedriver!(No symbol) [0x7ff7209a6a90]
+	chromedriver!(No symbol) [0x7ff7207d5d7d]
+	chromedriver!(No symbol) [0x7ff7208309ea]
+	chromedriver!(No symbol) [0x7ff720830cfc]
+	chromedriver!(No symbol) [0x7ff7208818f7]
+	chromedriver!(No symbol) [0x7ff72087e502]
+	chromedriver!(No symbol) [0x7ff720822e4b]
+	chromedriver!(No symbol) [0x7ff720823d83]
+	chromedriver!GetHandleVerifier [0x7ff720e92f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff720ec0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff720eb3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff720b73f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff7209b419c]
+	chromedriver!(No symbol) [0x7ff7209afdd4]
+	chromedriver!(No symbol) [0x7ff7209aff64]
+	chromedriver!(No symbol) [0x7ff72099a91c]
+	KERNEL32!BaseThreadInitThunk [0x7ffd178dccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffd18accaec+2c]
+
+? Error: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[autocomplete='username']"}
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff720a7e035+5745]
+	chromedriver!(No symbol) [0x7ff7209a6a90]
+	chromedriver!(No symbol) [0x7ff7207d5d7d]
+	chromedriver!(No symbol) [0x7ff7208309ea]
+	chromedriver!(No symbol) [0x7ff720830cfc]
+	chromedriver!(No symbol) [0x7ff7208818f7]
+	chromedriver!(No symbol) [0x7ff72087e502]
+	chromedriver!(No symbol) [0x7ff720822e4b]
+	chromedriver!(No symbol) [0x7ff720823d83]
+	chromedriver!GetHandleVerifier [0x7ff720e92f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff720ec0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff720eb3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff720b73f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff7209b419c]
+	chromedriver!(No symbol) [0x7ff7209afdd4]
+	chromedriver!(No symbol) [0x7ff7209aff64]
+	chromedriver!(No symbol) [0x7ff72099a91c]
+	KERNEL32!BaseThreadInitThunk [0x7ffd178dccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffd18accaec+2c]
+
+Login successful!
+Scraping data from Boiler...
+Scraping data from Hot Water Tank...
+Scraping data from Heating Tank...
+Scraping data from Solar...
+Scraping data from Feed System...
+All data saved to data.json
+? Error: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[autocomplete='username']"}
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6ec09e035+5745]
+	chromedriver!(No symbol) [0x7ff6ebfc6a90]
+	chromedriver!(No symbol) [0x7ff6ebdf5d7d]
+	chromedriver!(No symbol) [0x7ff6ebe509ea]
+	chromedriver!(No symbol) [0x7ff6ebe50cfc]
+	chromedriver!(No symbol) [0x7ff6ebea18f7]
+	chromedriver!(No symbol) [0x7ff6ebe9e502]
+	chromedriver!(No symbol) [0x7ff6ebe42e4b]
+	chromedriver!(No symbol) [0x7ff6ebe43d83]
+	chromedriver!GetHandleVerifier [0x7ff6ec4b2f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff6ec4e0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff6ec4d3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff6ec193f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff6ebfd419c]
+	chromedriver!(No symbol) [0x7ff6ebfcfdd4]
+	chromedriver!(No symbol) [0x7ff6ebfcff64]
+	chromedriver!(No symbol) [0x7ff6ebfba91c]
+	KERNEL32!BaseThreadInitThunk [0x7ff9f765ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff9f8bacaec+2c]
+
+? Error: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[autocomplete='username']"}
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6ec09e035+5745]
+	chromedriver!(No symbol) [0x7ff6ebfc6a90]
+	chromedriver!(No symbol) [0x7ff6ebdf5d7d]
+	chromedriver!(No symbol) [0x7ff6ebe509ea]
+	chromedriver!(No symbol) [0x7ff6ebe50cfc]
+	chromedriver!(No symbol) [0x7ff6ebea18f7]
+	chromedriver!(No symbol) [0x7ff6ebe9e502]
+	chromedriver!(No symbol) [0x7ff6ebe42e4b]
+	chromedriver!(No symbol) [0x7ff6ebe43d83]
+	chromedriver!GetHandleVerifier [0x7ff6ec4b2f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff6ec4e0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff6ec4d3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff6ec193f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff6ebfd419c]
+	chromedriver!(No symbol) [0x7ff6ebfcfdd4]
+	chromedriver!(No symbol) [0x7ff6ebfcff64]
+	chromedriver!(No symbol) [0x7ff6ebfba91c]
+	KERNEL32!BaseThreadInitThunk [0x7ff9f765ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff9f8bacaec+2c]
+
+? Error: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[autocomplete='username']"}
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6ec09e035+5745]
+	chromedriver!(No symbol) [0x7ff6ebfc6a90]
+	chromedriver!(No symbol) [0x7ff6ebdf5d7d]
+	chromedriver!(No symbol) [0x7ff6ebe509ea]
+	chromedriver!(No symbol) [0x7ff6ebe50cfc]
+	chromedriver!(No symbol) [0x7ff6ebea18f7]
+	chromedriver!(No symbol) [0x7ff6ebe9e502]
+	chromedriver!(No symbol) [0x7ff6ebe42e4b]
+	chromedriver!(No symbol) [0x7ff6ebe43d83]
+	chromedriver!GetHandleVerifier [0x7ff6ec4b2f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff6ec4e0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff6ec4d3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff6ec193f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff6ebfd419c]
+	chromedriver!(No symbol) [0x7ff6ebfcfdd4]
+	chromedriver!(No symbol) [0x7ff6ebfcff64]
+	chromedriver!(No symbol) [0x7ff6ebfba91c]
+	KERNEL32!BaseThreadInitThunk [0x7ff9f765ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ff9f8bacaec+2c]
+
+Login successful!
+Scraping data from Boiler...
+Scraping data from Hot Water Tank...
+Scraping data from Heating Tank...
+Scraping data from Solar...
+Scraping data from Feed System...
+All data saved to data.json
+? Error: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[autocomplete='username']"}
+  (Session info: chrome=152.0.7977.83); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff70e3fe035+5745]
+	chromedriver!(No symbol) [0x7ff70e326a90]
+	chromedriver!(No symbol) [0x7ff70e155d7d]
+	chromedriver!(No symbol) [0x7ff70e1b09ea]
+	chromedriver!(No symbol) [0x7ff70e1b0cfc]
+	chromedriver!(No symbol) [0x7ff70e2018f7]
+	chromedriver!(No symbol) [0x7ff70e1fe502]
+	chromedriver!(No symbol) [0x7ff70e1a2e4b]
+	chromedriver!(No symbol) [0x7ff70e1a3d83]
+	chromedriver!GetHandleVerifier [0x7ff70e812f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff70e840132+447842]
+	chromedriver!GetHandleVerifier [0x7ff70e833e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff70e4f3f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff70e33419c]
+	chromedriver!(No symbol) [0x7ff70e32fdd4]
+	chromedriver!(No symbol) [0x7ff70e32ff64]
+	chromedriver!(No symbol) [0x7ff70e31a91c]
+	KERNEL32!BaseThreadInitThunk [0x7ffa02b8ccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffa0316caec+2c]
+
+Login successful!
+Scraping data from Boiler...
+Scraping data from Hot Water Tank...
+Scraping data from Heating Tank...
+Scraping data from Solar...
+Scraping data from Feed System...
+All data saved to data.json
+^C^CTraceback (most recent call last):
+  File "C:\Users\zsolt\Github\Froling_Connect\app.py", line 33, in <module>
+    driver = webdriver.Chrome(options=chrome_options)
+  File "C:\Users\zsolt\Github\Froling_Connect\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 47, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\zsolt\Github\Froling_Connect\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 71, in __init__
+    super().__init__(command_executor=executor, options=options)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zsolt\Github\Froling_Connect\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 263, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\zsolt\Github\Froling_Connect\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 366, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zsolt\Github\Froling_Connect\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\zsolt\Github\Froling_Connect\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 233, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff767e7e035+5745]
+	chromedriver!(No symbol) [0x7ff767da6a90]
+	chromedriver!(No symbol) [0x7ff767bd5d7d]
+	chromedriver!(No symbol) [0x7ff767c18118]
+	chromedriver!(No symbol) [0x7ff767c13588]
+	chromedriver!(No symbol) [0x7ff767c67711]
+	chromedriver!(No symbol) [0x7ff767c66f76]
+	chromedriver!(No symbol) [0x7ff767c22e4b]
+	chromedriver!(No symbol) [0x7ff767c23d83]
+	chromedriver!GetHandleVerifier [0x7ff768292f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff7682c0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff7682b3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff767f73f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff767db419c]
+	chromedriver!(No symbol) [0x7ff767dafdd4]
+	chromedriver!(No symbol) [0x7ff767daff64]
+	chromedriver!(No symbol) [0x7ff767d9a91c]
+	KERNEL32!BaseThreadInitThunk [0x7ffd4d4fccb7+17]
+	ntdll!RtlUserThreadStart [0x7ffd4e7ccaec+2c]
+
